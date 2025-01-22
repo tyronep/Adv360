@@ -19,7 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 &lt {
-   tapping-term-ms = <200>;
+   tapping-term-ms = <150>;
 };
 
 / {
@@ -31,8 +31,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
+        tapping-term-ms = <150>;
+        quick_tap_ms = <150>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
@@ -54,11 +54,11 @@
 
         layer_keypad {
             bindings = <
- &trans  &kp F1     &kp F2    &kp F3     &kp F4    &kp F5     &trans                                                     &trans  &kp F6     &kp F7     &kp F8     &kp F9         &kp F10          &kp F11
- &trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &trans                                                     &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS   &kp KP_DIVIDE    &kp F12
- &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans          &trans  &trans    &trans  &trans           &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS    &kp KP_MULTIPLY  &kp BSPC
- &trans  &trans     &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC                           &trans    &trans                           &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT     &kp KP_EQUAL     &kp KP_ENTER
- &mo 2   &trans  &trans  &trans  &trans                               &trans  &trans  &trans    &trans  &trans  &trans                      &trans     &trans     &trans         &none            &none
+ &kp GRAVE  &kp F1     &kp F2    &kp F3     &kp F4    &kp F5     &trans                                                     &trans  &kp F6     &kp F7     &kp F8     &kp F9         &kp F10          &kp F11
+ &trans    &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &trans                                                     &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS   &kp KP_DIVIDE    &kp F12
+ &trans    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans          &trans  &trans    &trans  &trans           &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS    &kp KP_MULTIPLY  &kp BSPC
+ &trans    &trans     &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC                           &trans    &trans                           &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT     &kp KP_EQUAL     &kp KP_ENTER
+ &mo 2     &trans  &trans  &trans  &trans                               &trans  &trans  &trans    &trans  &trans  &trans                      &trans     &trans     &trans         &none            &none
             >;
         };
 

@@ -84,11 +84,11 @@
 
         layer_arrow {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans     &trans     &trans     &trans      &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &KP PG_UP  &LG(LEFT)  &kp UP     &LG(RIGHT)  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &KP PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans     &trans     &trans     &trans      &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans             &trans     &trans     &trans      &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans     &trans        &trans     &trans         &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &kp PG_UP  &kp LG(LEFT)  &kp UP     &kp LG(RIGHT)  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &kp PG_DN  &kp LEFT      &kp DOWN   &kp RIGHT      &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans     &trans        &trans     &trans         &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans             &trans        &trans     &trans         &trans  &trans
             >;
         };
 

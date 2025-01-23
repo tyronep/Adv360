@@ -50,6 +50,16 @@
             bindings = <&kp LG(V)>;
             key-positions = <47 50>;
         };
+
+        Refresh {
+            bindings = <&kp LG(R)>;
+            key-positions = <15 18>;
+        };
+
+        NewTab {
+            bindings = <&kp LG(T)>;
+            key-positions = <15 19>;
+        };
     };
 
     keymap {

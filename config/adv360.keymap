@@ -60,6 +60,16 @@
             bindings = <&kp LG(T)>;
             key-positions = <15 19>;
         };
+
+        Bold {
+            bindings = <&kp LG(B)>;
+            key-positions = <61 64>;
+        };
+
+        Find {
+            bindings = <&kp LG(F)>;
+            key-positions = <29 32>;
+        };
     };
 
     keymap {
@@ -67,21 +77,21 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1    &kp N2       &kp N3      &kp N4      &kp N5  &none                                                       &none      &kp N6  &kp N7      &kp N8      &kp N9       &kp N0      &kp MINUS
-&kp TAB    &kp Q     &kp W        &kp E       &kp R       &kp T   &none                                                       &none      &kp Y   &kp U       &kp I       &kp O        &kp P       &kp BSLH
-&lt 3 ESC  &lt 1 A   &hm LCTRL S  &hm LALT D  &hm LCMD F  &kp G   &none     &none    &none              &none      &none      &none      &kp H   &hm RCMD J  &hm RALT K  &hm RCTRL L  &lt 1 SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X        &kp C       &kp V       &kp B                      &kp LG(LEFT)       &kp PG_UP                        &kp N   &kp M       &kp COMMA   &kp DOT      &kp FSLH    &kp RSHFT
-&mo 1      &kp CAPS  &none        &none       &none               &kp BSPC  &kp DEL  &kp LG(RIGHT)      &kp PG_DN  &kp ENTER  &kp SPACE          &none       &none       &none        &mo 2       &mo 1
+&kp EQUAL  &kp N1    &kp N2       &kp N3      &kp N4      &kp N5  &none                                                            &none      &kp N6  &kp N7      &kp N8      &kp N9       &kp N0      &kp MINUS
+&kp TAB    &kp Q     &kp W        &kp E       &kp R       &kp T   &none                                                            &none      &kp Y   &kp U       &kp I       &kp O        &kp P       &kp BSLH
+&lt 3 ESC  &lt 1 A   &hm LCTRL S  &hm LALT D  &hm LCMD F  &kp G   &none          &none    &none              &none      &none      &none      &kp H   &hm RCMD J  &hm RALT K  &hm RCTRL L  &lt 1 SEMI  &kp SQT
+&kp LSHFT  &kp Z     &kp X        &kp C       &kp V       &kp B                           &kp LG(LEFT)       &kp PG_UP                        &kp N   &kp M       &kp COMMA   &kp DOT      &kp FSLH    &kp RSHFT
+&mo 1      &kp CAPS  &none        &none       &none               &mt LCMD BSPC  &kp DEL  &kp LG(RIGHT)      &kp PG_DN  &kp ENTER  &kp SPACE          &none       &none       &none        &mo 2       &mo 1
             >;
         };
 
         layer_symbol {
             bindings = <
-&kp GRAVE  &kp F1     &kp F2    &kp F3     &kp F4    &kp F5     &trans                                      &trans     &kp F6     &kp F7     &kp F8     &kp F9        &kp F10          &kp F11
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &trans                                      &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE    &kp F12
-&trans     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans  &trans  &trans      &trans  &trans  &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY  &kp BSPC
-&trans     &trans     &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC                   &trans      &trans                     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp KP_EQUAL     &kp KP_ENTER
-&none      &none      &trans    &trans     &trans               &trans  &trans  &trans      &trans  &trans  &kp KP_N0             &trans     &trans     &trans        &none            &none
+&kp GRAVE  &kp F1     &kp F2    &kp F3     &kp F4    &kp F5     &trans                                      &trans     &kp F6        &kp F7     &kp F8     &kp F9     &kp F10          &kp F11
+&kp TILDE  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &trans                                      &trans     &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE    &kp F12
+&trans     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans  &trans  &trans      &trans  &trans  &trans     &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &kp BSPC
+&trans     &trans     &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC                   &trans      &trans                     &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL     &kp KP_ENTER
+&none      &none      &trans    &trans     &trans               &trans  &trans  &trans      &trans  &trans  &kp KP_N0                &trans     &trans     &trans     &none            &none
             >;
         };
 
@@ -97,11 +107,11 @@
 
         layer_arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans     &trans        &trans    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp PG_UP  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &trans        &trans    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans     &trans        &trans             &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp PG_UP  &kp LG(LEFT)  &kp UP             &kp LG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp PG_DN  &kp LEFT      &kp DOWN           &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &kp LC(LEFT)  &kp LC(LS(RIGHT))  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans             &trans         &trans  &trans
             >;
         };
     };
